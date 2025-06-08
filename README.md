@@ -1,12 +1,6 @@
 # 🤖 Arduino Nano Robot Controller with Servos, DC Motors, PCA9685 & iBUS
 
-# 🤖 Arduino Nano Robot Controller with Servos, DC Motors, PCA9685 & iBUS
-
 This project is a remote-controlled robot using an **Arduino Nano**, two **servo motors**, four **DC motors**, a **PCA9685 servo driver**, and an **L298N motor driver**. The robot is controlled using a FlySky **FS-i6** transmitter via **iBUS protocol**.
-
-## 📁 Folder Structure
-
-
 
 ## 🔧 Hardware Used
 
@@ -29,8 +23,8 @@ This project is a remote-controlled robot using an **Arduino Nano**, two **servo
 ## 📦 Library Requirements
 
 Install the following libraries in the Arduino IDE:
-- `Adafruit PWM Servo Driver` (for PCA9685)
-- `IBusBM` (for iBUS receiver communication)
+- Adafruit PWM Servo Driver (for PCA9685)
+- IBusBM (for iBUS receiver communication)
 
 Use Library Manager or install via ZIP.
 
@@ -50,7 +44,7 @@ Use Library Manager or install via ZIP.
 - Servo 1 & Servo 2 are smoothly updated based on target positions (0°–180°) from the iBUS receiver.
 
 ### Motor Control Logic:
-```cpp
+cpp
 if (throttle > 50)       // Move forward
 else if (throttle < -50) // Move backward
 else if (steering > 50)  // Turn right
